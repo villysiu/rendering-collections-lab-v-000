@@ -4,6 +4,7 @@
     <th>Invoice Id
     <th>Customer</th>
   </tr>
-
-  <%= render @invoices || "No Invoices"%>
+  <% @invoices.each do |invoice| %>
+    <%= render @invoices || "No Invoices"%>
+  <% end %>
 </table>
