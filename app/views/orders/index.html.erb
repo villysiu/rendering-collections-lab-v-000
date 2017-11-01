@@ -7,6 +7,11 @@
     <th>Customer</th>
   </tr>
 
-    <%= render @orders || "No Orders"%>
+  <% if @orders.empty? %>
+    <%= 'No Orders' %>
+  <% else %>
+    <%= render @orders %>
+  <% end %>
+    
 
 </table>
