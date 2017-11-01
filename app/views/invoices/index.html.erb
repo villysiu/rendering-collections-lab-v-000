@@ -5,6 +5,6 @@
     <th>Customer</th>
   </tr>
   <% @invoices = [] %>
-    <%= if !@invoices.empty? ? render (@invoices) : 'No Invoices' %>
+    <%= if @invoices.empty? ? render (@invoices) : 'No Invoices' %>
 
 </table>
